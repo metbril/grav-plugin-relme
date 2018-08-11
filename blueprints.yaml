@@ -1,0 +1,31 @@
+name: Rel Me
+version: 0.1.0
+description: Add rel=me links to your website.
+icon: plug
+author:
+  name: Robert van Bregt
+  email: robert@robertvanbregt.nl
+homepage: https://github.com/metbril/grav-plugin-rel-me
+demo: http://demo.yoursite.com
+keywords: grav, plugin, etc
+bugs: https://github.com/metbril/grav-plugin-rel-me/issues
+docs: https://github.com/metbril/grav-plugin-rel-me/blob/develop/README.md
+license: MIT
+
+form:
+  validation: strict
+  fields:
+    enabled:
+      type: toggle
+      label: PLUGIN_ADMIN.PLUGIN_STATUS
+      highlight: 1
+      default: 0
+      options:
+        1: PLUGIN_ADMIN.ENABLED
+        0: PLUGIN_ADMIN.DISABLED
+      validate:
+        type: bool
+    text_var:
+      type: text
+      label: PLUGIN_REL_ME.TEXT_VARIABLE
+      help: PLUGIN_REL_ME.TEXT_VARIABLE_HELP
