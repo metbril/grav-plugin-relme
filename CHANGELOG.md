@@ -1,5 +1,8 @@
 # v0.1.0
-##  08/11/2018
+##  08/12/2018
 
 1. [](#new)
-    * ChangeLog started...
+    * Add plugin configuration
+    * Add list template
+    * Add link template
+    * Add initial documentation
