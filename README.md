@@ -1,8 +1,9 @@
 # Rel Me Plugin
 
-**This README.md file should be modified to describe the features, installation, configuration, and general usage of this plugin.**
+The **Rel Me** Plugin is for [Grav CMS](http://github.com/getgrav/grav). Add `rel="me"` links to your website in 2 ways.
 
-The **Rel Me** Plugin is for [Grav CMS](http://github.com/getgrav/grav). Add rel=me links to your website.
+1. Add `<link>` to the HTML `<head>` section or create a list.
+2. Add an `<ul>` list somewhere on a page.
 
 ## Installation
 
@@ -38,19 +39,60 @@ Here is the default configuration and an explanation of available options:
 
 ```yaml
 enabled: true
+path:
+active: true
+icons: true
 ```
+
+option | explanation
+--- | ---
+enabled | Enable the plugin
+path | Path/route to the parent page of the menu items
+active | If enabled, insert `<link>` tags in the page
+icons | If enabled, show FontAwesome icons in the list
 
 Note that if you use the admin plugin, a file with your configuration, and named relme.yaml will be saved in the `user/config/plugins/` folder once the configuration is saved in the admin.
 
 ## Usage
 
-**Describe how to use the plugin.**
+### Pages
 
+1. Add a parent page. The route to this page should be added to the plugin configuration. Disable routing of the page.
+
+2. Create child pages for each menu item that you want to include.
+
+Front matter | Description
+------------ | -----------
+`title` | Displayed as the list title
+`icon` | A FontAwesome icon. Defaults to 'link'.
+`link` | The link to your profile page
+
+### Link
+
+Add this code to your template in the `<head>` section.
+
+```twig
+{% if config.plugins.relme.enabled %}
+    {% include 'partials/relme-link.html.twig' %}
+{% endif %}
+```
+
+### List
+
+Optionally you can add a social menu to a page. For example in your sidebar. Add this code to your template:
+
+```twig
+{% if config.plugins.relme.enabled %}
+    {% include 'partials/relme-list.html.twig' %}
+{% endif %}
+```
+
+The list items can have icons. 
 ## Credits
 
-**Did you incorporate third-party code? Want to thank somebody?**
+This plugin provides [rel=me](https://indieweb.org/rel-me) functionality for the [IndieWeb](https://indieweb.org/).
 
 ## To Do
 
-- [ ] Future plans, if any
-
+- [ ] Automatically inject link in HTML header
+- [ ] Per page override of link injection
