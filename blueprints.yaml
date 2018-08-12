@@ -1,13 +1,13 @@
 name: Rel Me
 version: 0.1.0
-description: Add rel=me links to your website.
+description: 'Add rel="me" links to your website.'
 icon: plug
 author:
   name: Robert van Bregt
   email: robert@robertvanbregt.nl
 homepage: https://github.com/metbril/grav-plugin-relme
 demo: http://demo.yoursite.com
-keywords: grav, plugin, etc
+keywords: grav, plugin, social, link, indieweb
 bugs: https://github.com/metbril/grav-plugin-relme/issues
 docs: https://github.com/metbril/grav-plugin-relme/blob/develop/README.md
 license: MIT
