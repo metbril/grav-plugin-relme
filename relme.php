@@ -39,7 +39,16 @@ class RelMePlugin extends Plugin
 
         // Enable the main event we are interested in
         $this->enable([
+            'onTwigTemplatePaths' => ['onTwigTemplatePaths', 0],
         ]);
+    }
+
+    /**
+     * Add current directory to twig lookup paths.
+     */
+    public function onTwigTemplatePaths()
+    {
+        $this->grav['twig']->twig_paths[] = __DIR__ . '/templates';
     }
 
     /**
