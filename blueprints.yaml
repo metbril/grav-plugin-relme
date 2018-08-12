@@ -25,3 +25,31 @@ form:
         0: PLUGIN_ADMIN.DISABLED
       validate:
         type: bool
+    path:
+      type: text
+      size: medium
+      label: PLUGIN_RELME.PATH_LABEL
+      help: PLUGIN_RELME.PATH_HELP
+      placeholder: PLUGIN_RELME.PATH_PLACEHOLDER
+    active:
+      type: toggle
+      label: PLUGIN_RELME.ACTIVE_LABEL
+      help: PLUGIN_RELME.ACTIVE_HELP
+      highlight: 0
+      default: 1
+      options:
+        1: PLUGIN_ADMIN.ENABLED
+        0: PLUGIN_ADMIN.DISABLED
+      validate:
+        type: bool
+    icons:
+      type: toggle
+      label: PLUGIN_RELME.ICONS_LABEL
+      help: PLUGIN_RELME.ICONS_HELP
+      highlight: 0
+      default: 1
+      options:
+        1: PLUGIN_ADMIN.ENABLED
+        0: PLUGIN_ADMIN.DISABLED
+      validate:
+        type: bool

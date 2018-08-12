@@ -1,2 +1,19 @@
 en:
   PLUGIN_RELME:
+    PATH_LABEL: Path
+    PATH_HELP: Path to parent of menu items
+    PATH_PLACEHOLDER: Path to parent of menu items
+    ACTIVE_LABEL: Active
+    ACTIVE_HELP: Enabled if meta tags should be generated
+    ICONS_LABEL: Show icons
+    ICONS_HELP: Show icons in menu
+
+nl:
+  PLUGIN_RELME:
+    PATH_LABEL: Pad
+    PATH_HELP: Pad naar ouder van menuitems
+    PATH_PLACEHOLDER: Pad naar ouder van menuitems
+    ACTIVE_LABEL: Actief
+    ACTIVE_HELP: Ingeschakeld als meta tags moeten worden gegenereerd
+    ICONS_LABEL: Iconen weergeven
+    ICONS_HELP: Iconen weergeven in menu
