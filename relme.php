@@ -52,7 +52,7 @@ class RelMePlugin extends Plugin
     public function onPageContentRaw(Event $e)
     {
         // Get a variable from the plugin configuration
-        $text = $this->grav['config']->get('plugins.rel-me.text_var');
+        $text = $this->grav['config']->get('plugins.relme.text_var');
 
         // Get the current raw content
         $content = $e['page']->getRawContent();

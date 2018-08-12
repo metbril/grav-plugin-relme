@@ -5,11 +5,11 @@ icon: plug
 author:
   name: Robert van Bregt
   email: robert@robertvanbregt.nl
-homepage: https://github.com/metbril/grav-plugin-rel-me
+homepage: https://github.com/metbril/grav-plugin-relme
 demo: http://demo.yoursite.com
 keywords: grav, plugin, etc
-bugs: https://github.com/metbril/grav-plugin-rel-me/issues
-docs: https://github.com/metbril/grav-plugin-rel-me/blob/develop/README.md
+bugs: https://github.com/metbril/grav-plugin-relme/issues
+docs: https://github.com/metbril/grav-plugin-relme/blob/develop/README.md
 license: MIT
 
 form:
