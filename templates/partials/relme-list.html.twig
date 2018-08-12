@@ -1,0 +1,14 @@
+{% set path = page.find(config.plugins.relme.path) %}
+<ul>
+    {% for menu in path.children.visible.order('default', 'asc') %}
+        <li>
+            <a rel="me" href="{{ menu.header.link }}">
+                {% if config.plugins.relme.icons -%}
+                    {%- set icon = (menu.header.icon) ? menu.header.icon : 'link' -%}
+                    <i class="fa fa-{{ icon }}"></i>
+                {% endif -%}
+                {{ menu.title }}
+            </a>
+        </li>
+    {% endfor %}
+</ul>

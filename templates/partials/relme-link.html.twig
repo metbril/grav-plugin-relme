@@ -1,0 +1,7 @@
+{% set path = page.find(config.plugins.relme.path) %}
+{% set active = config.plugins.relme.active %}
+{% if active %}
+    {%- for menu in path.children.visible.order('default', 'asc') -%}
+        <link rel="me" href="{{ menu.header.link }}" />
+    {% endfor %}
+{% endif %}
