@@ -1,5 +1,5 @@
 name: Rel Me
-version: 0.1.0
+version: 0.1.1
 description: 'Add rel="me" links to your website.'
 icon: plug
 author:
@@ -9,7 +9,7 @@ homepage: https://github.com/metbril/grav-plugin-relme
 demo: http://demo.yoursite.com
 keywords: grav, plugin, social, link, indieweb
 bugs: https://github.com/metbril/grav-plugin-relme/issues
-docs: https://github.com/metbril/grav-plugin-relme/blob/develop/README.md
+docs: https://github.com/metbril/grav-plugin-relme/blob/master/README.md
 license: MIT
 
 form:
@@ -26,7 +26,7 @@ form:
       validate:
         type: bool
     path:
-      type: text
+      type: pages
       size: medium
       label: PLUGIN_RELME.PATH_LABEL
       help: PLUGIN_RELME.PATH_HELP
