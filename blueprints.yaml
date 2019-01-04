@@ -26,7 +26,7 @@ form:
       validate:
         type: bool
     path:
-      type: text
+      type: pages
       size: medium
       label: PLUGIN_RELME.PATH_LABEL
       help: PLUGIN_RELME.PATH_HELP
